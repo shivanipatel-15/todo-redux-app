@@ -69,7 +69,6 @@ function App() {
                 <TableView
                   key={task.id}
                   task={task}
-                  // setProductDetails={setProductDetails}
                   onClickEdit={onClickEdit}
                   onClickDelete={onClickDelete}
                 />
