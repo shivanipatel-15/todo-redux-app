@@ -1,38 +1,269 @@
+/* App.css */
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-button {
+  cursor: pointer;
+}
+
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.todo-action {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 10px;
+}
+
+.todo-action button {
+  background-color: #f4f4f4;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.todo-action-btn {
+  margin: 0 10px;
+}
+
+.todo button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btnWrapper button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.headerBtnWrapper button {
+  color: #333;
+  background-color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.table-view-todo {
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.MuiDialog-container .MuiDialog-paper {
+  border-radius: 12px;
+  height: 900px;
+  width: 500px;
+}
+
+.primary-dialog .dialog-header {
+  display: flex;
+  padding: 16px;
+  flex-shrink: 0;
+}
+
+.primary-dialog .MuiDialog-paperScrollPaper {
+  overflow: hidden;
+}
+
+.primary-dialog .dialog-header .close-btn {
+  margin-left: auto;
+  margin-top: -8px;
+  margin-bottom: -8px;
+  margin-right: -9px;
+  color: black;
+}
+
+.primary-dialog .dialog-body {
+  padding: 0 16px 16px;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.todo-list .error-msg {
+  font-size: 20px;
+}
+
+.age-range {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px !important;
+  transition: background-color 0.3s ease-in-out;
+  margin: 20px 0 40px 0 !important;
+  text-transform: capitalize !important;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.gender-todo {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.date-picker-container {
+  display: flex;
+  align-items: center;
+}
+
+.date-picker-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.date-picker-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.date-picker-icon:hover {
+  color: #007bff; 
+}
+
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.react-datepicker__header {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.react-datepicker__day {
+  font-weight: bold;
+}
+
+.react-datepicker__day--selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.react-datepicker__day--today {
+  font-weight: bold;
+}
+
+.react-datepicker__day-name {
+  width: 2rem;
+  line-height: 2rem;
+}
+
+.react-datepicker__day-name.abbreviated {
+  width: 1.5rem;
+}
+
+.react-datepicker__month-dropdown {
+  font-size: 14px;
+}
+
+.react-datepicker__year-dropdown {
+  font-size: 14px;
+}
+
+.dlt-dialog .MuiDialog-container .MuiDialog-paper {
+  border-radius: 12px;
+  height: 200px;
+  width: 400px;
+}
+
+.dlt-dialog {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.dlt-dialog .MuiDialogTitle-root {
+  background-color: #007bff; 
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dlt-dialog .MuiDialogContent-root {
+  padding: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dlt-dialog .dialog-message {
+  margin: 20px;
+}
+
+.dlt-dialog .dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.dlt-dialog button {
+  margin-left: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dlt-dialog button:first-child {
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.dlt-dialog button:last-child {
+  background-color: #007bff; 
+  color: white; 
+  margin-right: 10px;
 }
